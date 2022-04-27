@@ -38,6 +38,15 @@ const InputHome = styled.input`
   left: 60vw;
 `
 
+const H2Link = styled.a`
+  color: white;
+  text-decoration: none;
+  
+  &:hover{
+    opacity: 0.4;
+  }
+`;
+
 
 export default class Todos extends Component {
 
@@ -136,7 +145,7 @@ componentDidMount (){
       <div>
         <InputHome className="inputfilter" onChange={this.filtro} type="text" placeholder="Pesquisar" />
         <div> 
-          <h2 className="h2-todos">Todos</h2>
+        <H2Link href="http://localhost:3000/todos"><h2 className="h2-todos">Todos</h2></H2Link>
         </div>
 
         <div className="container-todos">
