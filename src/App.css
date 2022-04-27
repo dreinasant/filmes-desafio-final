@@ -29,8 +29,14 @@ body{
 }
 .img-logo{
   position: relative;
-  
+  transition: all 0.5s;
+    cursor: pointer;
 }
+.img-logo:hover{
+  -webkit-transform: scale(1.4);
+    transform: scale(1.2);
+}
+
 .box-list {
   display: flex;
   align-items: center;

@@ -51,19 +51,12 @@ const LinkHomeInicio = styled(Link)`
   }
 `;
 
-const Input = styled.input`
-
-
-`
 const LinkTodos = styled(Link)`
   color: white;
   text-decoration: none;
   display: none;
  
 `
-
-
-
 
 export default class App extends React.Component {
   render() {
