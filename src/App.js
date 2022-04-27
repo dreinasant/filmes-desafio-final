@@ -47,7 +47,7 @@ const LinkHomeInicio = styled(Link)`
   text-decoration: none;
   
   &:hover{
-    opacity: 0.6;
+    opacity: 0.5;
   }
 `;
 
@@ -74,10 +74,10 @@ export default class App extends React.Component {
           <div className="container">
           <ul className="box-list">
           <li className="intro-li">
-              <a href="http://localhost:3000/inicio"><img className="img-logo" src={Logo} alt="logo"/></a>
+              <a href="http://localhost:3000/"><img className="img-logo" src={Logo} alt="logo"/></a>
             </li>
             <li className="intro-li">
-              <LinkHomeInicio to="/inicio">Inicio</LinkHomeInicio>
+              <LinkHomeInicio to="/">Inicio</LinkHomeInicio>
             </li>
             <li className="intro-li">
               <Categorias/>
@@ -120,7 +120,7 @@ export default class App extends React.Component {
         </nav>
 
         <Routes>
-          <Route path="/inicio" element={<Inicio />} />
+          <Route path="/" element={<Inicio />} />
           <Route path="/todos" element={<Todos/>}/>
           <Route path="/favoritos" element={<Favoritos/>}/>
           <Route path="/javistos" element={<JáVistos/>}/>
