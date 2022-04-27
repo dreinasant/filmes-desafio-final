@@ -1,38 +1,338 @@
-.App {
-  text-align: center;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 100px){
+  .nav-header{
+    min-width: 1060px;
   }
+ 
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  width: 100%;
+  height: 70px;
+  background: black;
+}
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img-logo{
+  position: relative;
+  
+}
+.box-list {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  margin-left: 10px;
+}
+.intro-li {
+  display: flex;
+  align-items: center;
+  padding-right: 2.5vw;
+  font-size: 0.9em;
+
+  font-weight: bold;
+  font-family: normal normal bold 13px/15px Arial;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.intro-li:hover{
+    cursor: pointer;
+}
+
+.img-seta-categoria:hover{
+  cursor: pointer;
+}
+
+.botao-categorias{
+  border: none;
+  background: black;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*
+.botao-categorias:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}*/
+
+
+
+.botao-categorias {
+  color: white;
+  font-size: 0.9em;
+  border: none;
+  cursor: pointer;
+}
+
+.box-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.box-butom {
+  display: none;
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+  min-width: 110px;
+  min-height: 100px;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: Arial;
+  padding-top: 8px;
+}
+
+.box-butom a {
+  color: white;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.box-butom a:hover {
+  background-color: rgb(99, 95, 95);
+}
+
+.box-dropdown:hover .box-butom {
+  display: block;
+}
+
+.box-dropdown:hover .botao-categorias {
+  background-color: black;
+}
+
+.intro-list-categoria{
+  width: 9vw;
+  height: 8vw;
+  margin-top: 15px;
+  background: black;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font: 0.9em Arial;
+}
+.intro-list-categoria a{
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.intro-list-categoria li {
+  width: 14vh ;
+  padding: 4px;
+  margin-left: 15px;
+  color: white;
+  text-decoration: none; 
+}
+.intro-list-categoria li:hover {
+  background: rgb(99, 95, 95);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.box{
+  display: flex;
+  align-items: center;
+  margin-left: 40vh;
+  
+}
+
+::-webkit-input-placeholder{
+  color: rgb(216, 205, 205);
+}
+
+/*Main/inicio*/
+
+.box-capitao{
+  display: flex;
+  width: 80%;
+  padding-left: 2vw;
+}
+.box-capitao-two{
+  margin-top: 4px;
+  padding: 40px;
+}
+.img-capitao{
+  width: 27vw;
+  border-radius: 4px;
+  margin-top: 45px;
+
+}
+.icon-coracao{
+  width: 3%;
+}
+.paragrafo-visto{
+  font-weight: bolder;
+  color: white;
+  font-size: 0.8em;
+  opacity: 0.9;
+}
+.box-h1-capitao{
+  color: white;
+  font: 2.3em Arial;
+  font-weight: bold;
+  opacity: 0.9;
+}
+.paragrafo-capitao-texto{
+  width: 70%;
+  color: white;
+  font: 0.8em Arial;
+  opacity: 0.9;
+ 
+}
+.box-icon-legal{
+  display: flex;
+  margin: 4px;
+}
+.icon-legal{
+  margin-left: 7px;
+}
+.paragrafo{
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  
+}
+
+/*carousel*/
+
+.intro-h2{
+  color: white;
+  position: relative;
+  top: 1vw;
+  left: 0.4vw;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.intro-carousel{
+  position: relative;
+  bottom: 1vw;
+  margin: 1.5vw;
+  
+}
+.icon-coracao-carousel{
+  width: 7%;
+  position: relative;
+  left: 16vw;
+  top: 2.2vw;
+  
+}
+.imgs-filmes-carousel{
+  width: 18vw;
+  padding: vw;
+  
+}
+.container-title-carousel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 94%;
+}
+.title-filmes-carousel{
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  font-family: Arial;
+}
+.intro-avaliacao{
+  display: flex;
+  align-items: center;
+}
+.paragrafo-avaliacao-carousel{
+  color: White; 
+  font-size: 0.7em;
+  font-weight: bolder;
+  padding-right: 0.5vw;
+}
+.icon-legal-carousel{
+  width: 1.1vw;
+}
+.intro-descricao{
+  width: 19vw;
+}
+.paragrafo-descricao{
+  color: white;
+  font-size: 0.6em;
+  font-family: Arial;
+  margin-top: 0.3vw;
+  width: 18vw;
+  height: 3vw;
+}
+
+
+
+/*Todos*/
+
+.h2-todos{
+  color: white;
+  margin-left: 3vw;
+  margin-top: -1.2vw;
+  margin-bottom: 0.5vw;
+  font:  1.7em Arial;
+}
+.container-todos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin-left: 3vw;
+  color: white;
+    
   }
-  to {
-    transform: rotate(360deg);
-  }
+.container-img-filmes{
+  width: 18vw;
+}
+
+.img-coracao-todos{
+  width: 7%;
+  position: relative;
+  right: 2vw;
+  bottom: 8.3vw;
+}
+.container-title-todos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 0.2vw;
+  
+}
+.title-filmes-todos{
+  font-size: 0.7em;
+  font-weight: bold;
+  font-family: Arial;
+}
+.container-avaliacao-todos{
+  display: flex;
+  align-items: center;
+  
+}
+.paragrafo-todos-avaliacao{
+  color: White; 
+  font-size: 0.7em;
+  font-weight: bolder;
+  padding-right: 0.5vw;
+
+}
+.icon-legal-todos{
+  width: 1.1vw;
+}
+.container-descricao{
+  color: white;
+  font-size: 0.6em;
+  font-family: Arial;
+  margin-top: 0.3vw;
+  width: 39vh;
+  height: 8vh;
+  margin-bottom: 2.3vw;
 }
